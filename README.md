@@ -4,9 +4,11 @@
 
 As the user approaches the end of a list, more rows are fetched transparently via Livewire, preserving filters, search, and sorting.
 
-> Developed and maintained by **Fibtegis Software Project and Consultancy Services Ltd.**
+> Developed and maintained by **Fibtegis Yazılım Proje ve Danışmanık Hizmetleri LTD. ŞTİ.**
+> https://fbt.gs
 
 ---
+
 
 ## Features
 
@@ -127,8 +129,18 @@ The `infinite()` method accepts a parameter to define the number of records to l
 
 ---
 
+## 💖 Supporting the Project
+
+If you find this plugin useful and would like to support its future development, you can do so by simply acquiring our company's token. Your support is greatly appreciated and helps us continue to maintain and improve this project.
+
+- **Token:** Fibtegis Token (Solana)
+- **Contract:** `CXun4JaKiDLmPHrcMLbB2v9ZEqXztp7SsRtgHpmYpump`
+- **Buy/View on GMGN:** [https://gmgn.ai/sol/token/CXun4JaKiDLmPHrcMLbB2v9ZEqXztp7SsRtgHpmYpump](https://gmgn.ai/sol/token/CXun4JaKiDLmPHrcMLbB2v9ZEqXztp7SsRtgHpmYpump?filter=All)
+
+---
+
 ## License
 
 Published under the Apache-2.0 License. See the `LICENSE` file for details.
 
-&copy; 2025 **Fibtegis Software Project
+&copy; 2025 **Fibtegis Yazılım Proje ve Danışmanık Hizmetleri LTD. ŞTİ.**
