@@ -129,6 +129,6 @@ The `infinite()` method accepts a parameter to define the number of records to l
 
 ## License
 
-Published under the MIT License. See the `LICENSE` file for details.
+Published under the Apache-2.0 License. See the `LICENSE` file for details.
 
 &copy; 2025 **Fibtegis Software Project
