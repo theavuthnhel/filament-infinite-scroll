@@ -30,6 +30,15 @@ class FilamentInfiniteScroll
                         $livewire->infinitePerPage = $perPage;
                     }
 
+                    if (method_exists($this, 'getLivewire')) {
+                        $livewire->listeners = array_merge($livewire->listeners ?? [], [
+                            'updatedTableFilters'        => 'resetInfinite',
+                            'updatedTableSearch'         => 'resetInfinite',
+                            'updatedTableSortColumn'     => 'resetInfinite',
+                            'updatedTableSortDirection'  => 'resetInfinite',
+                            'resetTableFilters'          => 'resetInfinite',
+                        ]);
+                    }
 
                     // Kendi div'imizi eklemek yerine, stilleri ve gözlemciyi doğrudan render ediyoruz.
                     // Bu, Filament'in kendi yapısını bozmadan çalışır.
