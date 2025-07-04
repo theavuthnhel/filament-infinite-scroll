@@ -144,3 +144,16 @@ If you find this plugin useful and would like to support its future development,
 Published under the Apache-2.0 License. See the `LICENSE` file for details.
 
 &copy; 2025 **Fibtegis Yazılım Proje ve Danışmanık Hizmetleri LTD. ŞTİ.**
+
+## Contributors ✨
+
+Thanks goes to these wonderful people:
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/OccTherapist"><img src="https://avatars.githubusercontent.com/OccTherapist" width="100px;" alt=""/><br /><sub><b>OccTherapist</b></sub></a><br /><a href="#code-OccTherapist" title="Code">💻</a></td>
+  </tr>
+</table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
