@@ -39,9 +39,4 @@ trait InteractsWithInfiniteScroll
         $this->infiniteEnded = false;
     }
 
-    public function updatedTableFilters(): void     { $this->resetInfinite(); }
-    public function updatedTableSearch(): void           { $this->resetInfinite(); }
-    public function updatedTableSortColumn(): void       { $this->resetInfinite(); }
-    public function updatedTableSortDirection(): void    { $this->resetInfinite(); }
-    public function resetTableFilters(): void            { $this->resetInfinite(); }
 }
