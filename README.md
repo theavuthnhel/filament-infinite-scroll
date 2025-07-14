@@ -145,6 +145,45 @@ Published under the Apache-2.0 License. See the `LICENSE` file for details.
 
 &copy; 2025 **Fibtegis Yazılım Proje ve Danışmanık Hizmetleri LTD. ŞTİ.**
 
+---
+
+## ⚠️ Trait Collision: InteractsWithInfiniteScroll vs AdvancedTables
+
+If you're using both `InteractsWithInfiniteScroll` and `AdvancedTables` traits in the same class (such as `ListRecords`), method name collisions like `updatedTableFilters`, `updatedTableSearch`, and `updatedTableSortColumn` may occur.
+
+To resolve this, explicitly alias the methods and define a custom implementation that calls both versions:
+
+```php
+use InteractsWithInfiniteScroll, AdvancedTables {
+    InteractsWithInfiniteScroll::updatedTableFilters as infiniteUpdatedTableFilters;
+    InteractsWithInfiniteScroll::updatedTableSearch as infiniteUpdatedTableSearch;
+    InteractsWithInfiniteScroll::updatedTableSortColumn as infiniteUpdatedTableSortColumn;
+    AdvancedTables::updatedTableFilters as advancedUpdatedTableFilters;
+    AdvancedTables::updatedTableSearch as advancedUpdatedTableSearch;
+    AdvancedTables::updatedTableSortColumn as advancedUpdatedTableSortColumn;
+}
+
+public function updatedTableFilters(): void
+{
+    $this->infiniteUpdatedTableFilters();
+    $this->advancedUpdatedTableFilters();
+}
+
+public function updatedTableSearch(): void
+{
+    $this->infiniteUpdatedTableSearch();
+    $this->advancedUpdatedTableSearch();
+}
+
+public function updatedTableSortColumn(): void
+{
+    $this->infiniteUpdatedTableSortColumn();
+    $this->advancedUpdatedTableSortColumn();
+}
+```
+
+This ensures both plugins work together without conflict.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people:
