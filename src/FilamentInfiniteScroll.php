@@ -128,7 +128,7 @@ class FilamentInfiniteScroll
                       
                                     if (!document.getElementById('dynamic-table-height')) {
                                         const top = container.getBoundingClientRect().top;
-                                        const bottomPadding = 4    ; // altta bırakmak istediğin boşluk
+                                        const bottomPadding = 8    ; // altta bırakmak istediğin boşluk
                                         const max = window.innerHeight - top - bottomPadding;
 
                                         const style = document.createElement('style');
